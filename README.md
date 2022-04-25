@@ -13,35 +13,22 @@ LZW压缩算法是由Abraham Lempel、Jacob Ziv和Terry Welch共同发明的一�
 4.	核心问题是效率问题，所以压缩和解压实现采用C语言，可以手动管理内存，用来提高效率。但是C语言对图形界面支持不是很好，所以采用JAVA做图形用户界面。然后由C语言生成动态数据链接库dll文件，在JAVA中调用C语言函数。
 ## 三、	LZW算法原理
 ### 1.	压缩流程
-
 <img src="https://s2.loli.net/2022/04/25/LasRZUcArxCqpzn.png" alt="_R4BYDIY.png">
-### 2.	解压流程
-
+2.	解压流程
 <img src="https://s2.loli.net/2022/04/25/5Mwhk6flnVXyRJ3.png" >
-### 3.	例子
-
-#### A．	例子：实现对字符串 “ababcababac”的压缩。
-
-##### a.	初始字典：
-
+3.	例子
+A．	例子：实现对字符串 “ababcababac”的压缩。
+a.	初始字典：
 <img src="https://s2.loli.net/2022/04/25/51O82PBbd6tQYWE.png" alt="_R63HO4O.png">
-##### b.	压缩流程
-
+b.	压缩流程
 <img src="https://s2.loli.net/2022/04/25/qSIEa1wDhyAKMtG.png" alt="_R63HO4O.png">
-##### c.	结果：0132372，压缩比：7/11 ≈ 63.6%
-
-#### B．	例子：实现对字符串 “0132372”的解压缩。
-
-##### a.	初始字典
-
+c.	结果：0132372，压缩比：7/11 ≈ 63.6%
+ B．	例子：实现对字符串 “0132372”的解压缩。
+ a.	初始字典
  <img src="https://s2.loli.net/2022/04/25/51O82PBbd6tQYWE.png" alt="_R63HO4O.png">
- 
-##### b.	解压缩流程
-
-##### c.结果：ababcababac
-
+ b.	解压缩流程
+ c.结果：ababcababac
 <img src="https://s2.loli.net/2022/04/25/qSIEa1wDhyAKMtG.png">
-
 ## 四、	LZW实现详细分析
 
 在字典中我们可以约定，无论多长的字符串其对应的编码都是定长的，通常选择12位。12位也就决定着编码的取值范围是0-4095，也就是最多4096个编码，字典中最多存放4096个。我们还可以约定一个字符用一个字节表示，也就是8位。所以在字典中可以是1个字节对应12位，可以是2个字节对应12位，可以是3个字节对应12位......可以发现当一个字节对应12位编码的时候，压缩比会大于100%，因此我们希望尽可能多的是两个及以上的字节对应12位。
