@@ -59,17 +59,17 @@ c.	结果：0132372，压缩比：7/11 ≈ 63.6%
     <img src="https://s2.loli.net/2022/04/25/tQAGSpJxvMNr4l9.png" >
 
 ## 五、	具体代码实现
-### 1.	项目结构
+1.	项目结构
 <img src="https://s2.loli.net/2022/04/25/M18svigC2z4DxdO.png">
-#### A． 项目类图
+A． 项目类图
 <img src="https://s2.loli.net/2022/04/25/GJyxYbosVKn1OBt.png">
-#### B． 压缩、解压核心代码结构
+B． 压缩、解压核心代码结构
 <img src="https://s2.loli.net/2022/04/25/VPr9jU8sBZXyIOH.png" >
-#### C． JAVA图形界面展示项目结构
+C． JAVA图形界面展示项目结构
 <img src="https://s2.loli.net/2022/04/25/BRrGx9DCJ7ZqS6v.png" >
-### 2.	压缩方法代码
+2.	压缩方法代码
 <img src="https://s2.loli.net/2022/04/25/7TPR2KieltwF1z5.png" >
-### 3.	解压缩代码
+3.	解压缩代码
 <img src="https://s2.loli.net/2022/04/25/BRrGx9DCJ7ZqS6v.png" >
 4.	读写文件类的封装（仅展示了部分函数）
   <img src="https://s2.loli.net/2022/04/25/JhHcjqwr51e6oKV.png" >
