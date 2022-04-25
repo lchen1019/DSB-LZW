@@ -35,6 +35,7 @@ LZW压缩算法是由Abraham Lempel、Jacob Ziv和Terry Welch共同发明的一�
 ##### a.	初始字典
 
  <img src="https://s2.loli.net/2022/04/25/51O82PBbd6tQYWE.png" alt="_R63HO4O.png">
+ 
 ##### b.	解压缩流程
 
 ##### c.结果：ababcababac
@@ -71,17 +72,15 @@ LZW压缩算法是由Abraham Lempel、Jacob Ziv和Terry Welch共同发明的一�
 
 ## 五、	具体代码实现
 ### 1.	项目结构
-	<img src="https://s2.loli.net/2022/04/25/M18svigC2z4DxdO.png" >
+<img src="https://s2.loli.net/2022/04/25/M18svigC2z4DxdO.png">
 #### A． 项目类图
 <img src="https://s2.loli.net/2022/04/25/GJyxYbosVKn1OBt.png">
-
 #### B． 压缩、解压核心代码结构
 <img src="https://s2.loli.net/2022/04/25/VPr9jU8sBZXyIOH.png" >
 #### C． JAVA图形界面展示项目结构
 <img src="https://s2.loli.net/2022/04/25/BRrGx9DCJ7ZqS6v.png" >
 ### 2.	压缩方法代码
 <img src="https://s2.loli.net/2022/04/25/7TPR2KieltwF1z5.png" >
-
 ### 3.	解压缩代码
 <img src="https://s2.loli.net/2022/04/25/BRrGx9DCJ7ZqS6v.png" >
 4.	读写文件类的封装（仅展示了部分函数）
