@@ -56,6 +56,39 @@ c.结果：ababcababac
      接着尝试过更换编译器，Windows系统上微软做的MSVC（Microsoft Visual Studio Compiler）。经过测试，之前使用的MinGW编译器效率低，在Windows平台上MSVC编译器性能更好，速度提升了1倍。
     <img src="https://s2.loli.net/2022/04/25/tQAGSpJxvMNr4l9.png" >
 
+五、	具体代码实现
+1.	项目结构
+A． 项目类图
+<img src="https://s2.loli.net/2022/04/25/M18svigC2z4DxdO.png" >
+  B． 压缩、解压核心代码结构
+<img src="https://s2.loli.net/2022/04/25/VPr9jU8sBZXyIOH.png" >
+ C． JAVA图形界面展示项目结构
+<img src="https://s2.loli.net/2022/04/25/BRrGx9DCJ7ZqS6v.png" >
+2.	压缩方法代码
+ 
+
+<img width="929" alt="4" src="https://user-images.githubusercontent.com/87420660/165094087-1ed9bf45-c36f-4dd1-99fb-d2da3f0e1b98.png">
+<img width="933" alt="2" src="https://user-images.githubusercontent.com/87420660/165094093-05f3319d-eed4-49fe-b3be-399f80d9a2f7.png">
+
+
+ 
+3.	解压缩代码
+ 
+
+
+
+
+
+
+
+
+
+
+4.	读写文件类的封装（仅展示了部分函数）
+ 
+  
+
+5． 采用Hash方式存储的字典结构，实现较为简单，未作创新，此处省略。
 
 
 
